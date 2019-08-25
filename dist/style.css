@@ -6,6 +6,7 @@ body {
   font-size: 25px;
   -webkit-animation-name: fadein;
           animation-name: fadein;
+  color: #194a50;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
@@ -78,6 +79,7 @@ input {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  color: #194a50;
 }
 
 @-webkit-keyframes floatRight {
@@ -113,5 +115,6 @@ input {
 select {
   text-align: center;
   font-size: 20px;
+  color: #194a50;
 }
 /*# sourceMappingURL=style.css.map */

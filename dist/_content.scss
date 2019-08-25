@@ -9,6 +9,7 @@ input {
   animation-duration: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+  color: #194a50;
 }
 
 @keyframes floatRight {
@@ -29,4 +30,5 @@ input {
 select {
   text-align: center;
   font-size: 20px;
+  color: #194a50;
 }
