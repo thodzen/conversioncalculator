@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Conversion</title>
+    </head>
+<body>
+    <div class="jumbotron">
+        <h5>Conversion Calculator</h5>
+        <p>Data Communications Assignment 1</p>
+    </div>
+
+    <div class="container">
+    Convert: <input type="text" id="num" placeholder="Enter Number Here"></input>
+    <form class="convert-btns">
+        <select name="Conversion">
+          <option value="DecToHex" onclick="DecToHex()">from decimal to hexadecimal</option>
+          <option value="DecToBin" onclick="DecToBin()">from decimal to binary</option>
+          <option value="BinToDec" onclick="BinaryToDec()">from binary to decimal</option>
+          <option value="HexToDec" onclick="HexToDec()">from hexadecimal to decimal</option>
+        </select>
+        
+      </form>
+
+    </div>
+
+    <footer class="main-footer">
+            <p>Copyright &copy; 2019 Tyler Hodzen Conversion Assignment</p>
+          </footer>
+    <!---
+    
+    <button id="results" onClick="DecToHex()">From Decimal to Hex!</button>
+
+    <button id="results" onClick="DecToBin()">From Decimal to Binary!</button>
+
+    <button id="results" onClick="BinaryToDec()">From Binary to Decimal!</button>
+    
+    <button id="results" onClick="HexToDec()">From Hex to Decimal!</button>
+
+    </div>
+-->
+
+    <script src="conversion.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
