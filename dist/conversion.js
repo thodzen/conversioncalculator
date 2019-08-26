@@ -1,4 +1,4 @@
-
+//! DECIMAL TO BINARY I NEED TO DO BY HAND
 function DecToHex() {
   var DtH_input = parseInt(document.getElementById("num").value);
   var hexString = DtH_input.toString(16);
