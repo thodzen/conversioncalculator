@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>Conversion</title>
     </head>
 <body>
@@ -29,37 +29,26 @@
     Convert: <input type="text" id="num" placeholder="#"></input>
     <form class="convert-btns">
         <select name="Conversion">
-          <option value="DecToHex" onclick="DecToHex()">from decimal to hexadecimal</option>
           <option value="DecToBin" onclick="DecToBin()">from decimal to binary</option>
+          <option value="DecToHex" onclick="DecToHex()">from decimal to hexadecimal</option>
           <option value="BinToDec" onclick="BinaryToDec()">from binary to decimal</option>
+          <option value="BinToHex" onclick="BinToHex()">from binary to hexadecimal</option>
           <option value="HexToDec" onclick="HexToDec()">from hexadecimal to decimal</option>
+          <option value="HexToBin" onclick="HexToBin()">from hexadecimal to binary</option>
         </select>
-        
       </form>
-
-    </div>
-
-    <div class="container">
-      <div id="answer">
-        <h3></h3>
-      </div>
     </div>
 
     <footer class="main-footer">
             <p>Copyright &copy; 2019 Tyler Hodzen Conversion Assignment</p>
           </footer>
-    <!---
-    
-    <button id="results" onClick="DecToHex()">From Decimal to Hex!</button>
 
-    <button id="results" onClick="DecToBin()">From Decimal to Binary!</button>
+          <div class="container">
+            <div id="answer">
+              <h3></h3>
+            </div>
+          </div>
 
-    <button id="results" onClick="BinaryToDec()">From Binary to Decimal!</button>
-    
-    <button id="results" onClick="HexToDec()">From Hex to Decimal!</button>
-
-    </div>
--->
 
     <script src="conversion.js"></script>
     <script
