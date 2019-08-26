@@ -1,0 +1,18 @@
+#answer {
+  border: 15px;
+  font-weight: bold;
+  color: green;
+  border: 1px solid #194a50;
+
+  animation: open;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes open{
+    0%{
+        padding: 0;
+    }
+    100%{
+        padding: 40px;
+    }
+}
