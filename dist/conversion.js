@@ -1,3 +1,33 @@
+function DoConversion(){
+  console.log("test");
+  let conversion_type = document.getElementById("conversion_id").value;
+
+  console.log(conversion_type);
+  if (conversion_type == "DecToBin"){
+    DecToBin();
+  }
+  else if (conversion_type == "DecToHex"){
+    DecToHex();
+  }
+  else if (conversion_type == "BinToDec")
+  {
+    BinaryToDec();
+  }
+  else if (conversion_type == "BinToHex")
+  {
+    BinToHex();
+  }
+  else if (conversion_type == "HexToDec")
+  {
+    HexToDec();
+  }
+  else if (conversion_type == "HexToBin")
+  {
+    HexToBin();
+  }
+
+}
+
 
 function DecToHex() {
   var DtH_input = parseInt(document.getElementById("num").value);
@@ -32,7 +62,7 @@ function BinToHex(){
   decString4 = Number.parseInt(BtH_input, 2); // BinToDec
   decString4 = decString4.toString(16); // DecToHex
   document.getElementById("answer").innerHTML = decString4;
-  console.log(decString5);
+  console.log(decString4);
 }
 
 function HexToBin(){

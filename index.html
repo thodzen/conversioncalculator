@@ -26,15 +26,15 @@
     </div>
 
     <div class="container">
-    Convert: <input type="text" id="num" placeholder="#"></input>
+    Convert: <input type="text" id="num" onchange="DoConversion()" placeholder="#"></input>
     <form class="convert-btns">
-        <select name="Conversion">
-          <option value="DecToBin" onclick="DecToBin()">from decimal to binary</option>
-          <option value="DecToHex" onclick="DecToHex()">from decimal to hexadecimal</option>
-          <option value="BinToDec" onclick="BinaryToDec()">from binary to decimal</option>
-          <option value="BinToHex" onclick="BinToHex()">from binary to hexadecimal</option>
-          <option value="HexToDec" onclick="HexToDec()">from hexadecimal to decimal</option>
-          <option value="HexToBin" onclick="HexToBin()">from hexadecimal to binary</option>
+        <select name="Conversion" id="conversion_id" onchange="DoConversion()" >
+          <option value="DecToBin" >from decimal to binary</option>
+          <option value="DecToHex">from decimal to hexadecimal</option>
+          <option value="BinToDec">from binary to decimal</option>
+          <option value="BinToHex">from binary to hexadecimal</option>
+          <option value="HexToDec" >from hexadecimal to decimal</option>
+          <option value="HexToBin">from hexadecimal to binary</option>
         </select>
       </form>
     </div>
