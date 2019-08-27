@@ -1,33 +1,22 @@
-function DoConversion(){
+function DoConversion() {
   console.log("test");
   let conversion_type = document.getElementById("conversion_id").value;
 
   console.log(conversion_type);
-  if (conversion_type == "DecToBin"){
+  if (conversion_type == "DecToBin") {
     DecToBin();
-  }
-  else if (conversion_type == "DecToHex"){
+  } else if (conversion_type == "DecToHex") {
     DecToHex();
-  }
-  else if (conversion_type == "BinToDec")
-  {
+  } else if (conversion_type == "BinToDec") {
     BinaryToDec();
-  }
-  else if (conversion_type == "BinToHex")
-  {
+  } else if (conversion_type == "BinToHex") {
     BinToHex();
-  }
-  else if (conversion_type == "HexToDec")
-  {
+  } else if (conversion_type == "HexToDec") {
     HexToDec();
-  }
-  else if (conversion_type == "HexToBin")
-  {
+  } else if (conversion_type == "HexToBin") {
     HexToBin();
   }
-
 }
-
 
 function DecToHex() {
   var DtH_input = parseInt(document.getElementById("num").value);
@@ -38,38 +27,47 @@ function DecToHex() {
 
 function DecToBin() {
   var DtB_input = parseInt(document.getElementById("num").value);
+  var result = "";
+  while (DtB_input > 0) {
+    result = (DtB_input % 2) + result;
+    DtB_input = Math.floor(DtB_input / 2);
+  }
+  document.getElementById("answer").innerHTML = result;
+  /*
+  var DtB_input = parseInt(document.getElementById("num").value);
   decString3 = DtB_input.toString(2);
   document.getElementById("answer").innerHTML = decString3;
   console.log(decString3);
+  */
 }
 
+
 function BinaryToDec() {
-  var BtD_input = parseInt(document.getElementById("num").value);  
-    decString = Number.parseInt(BtD_input, 2);
-    document.getElementById("answer").innerHTML = decString;
-    console.log(decString);
+  var BtD_input = parseInt(document.getElementById("num").value);
+  decString = Number.parseInt(BtD_input, 2);
+  document.getElementById("answer").innerHTML = decString;
+  console.log(decString);
 }
 
 function HexToDec() {
-  var HtD_input = (document.getElementById("num").value);
+  var HtD_input = document.getElementById("num").value;
   decString2 = Number.parseInt(HtD_input, 16);
   document.getElementById("answer").innerHTML = decString2;
   console.log(decString2);
 }
 
-function BinToHex(){
-  var BtH_input = (document.getElementById("num").value);
+function BinToHex() {
+  var BtH_input = document.getElementById("num").value;
   decString4 = Number.parseInt(BtH_input, 2); // BinToDec
   decString4 = decString4.toString(16); // DecToHex
   document.getElementById("answer").innerHTML = decString4;
   console.log(decString4);
 }
 
-function HexToBin(){
-  var HtB_input = (document.getElementById("num").value);
+function HexToBin() {
+  var HtB_input = document.getElementById("num").value;
   decString5 = Number.parseInt(HtB_input, 16); // HexToDec
   decString5 = decString5.toString(2); // DecToBin
   document.getElementById("answer").innerHTML = decString5;
   console.log(decString5);
 }
-

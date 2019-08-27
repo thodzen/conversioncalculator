@@ -1,3 +1,4 @@
+/*
 var input = 15;
 //var input = Number(prompt("type"));
 //function DecToHex(){}
@@ -57,3 +58,13 @@ console.log(decString3);
   }
 }
 */
+function dectobin() {
+  var string = "";
+  var input = 3456;
+  while (input > 0) {
+    string = (input % 2) + string;
+    input = Math.floor(input / 2);
+  }
+  console.log(string);
+}
+dectobin();
